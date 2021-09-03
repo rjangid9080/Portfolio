@@ -1,62 +1,222 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Portfolio</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Pacifico&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    </head>
-    <body>
-        <header class="headerr">
-            <nav class="nav-section">
-                <div class="nav-bar">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <section class="info-box">
-            <div class="info">
-                <h1>Hey! I am DoBBi</h1>
-                <p>a web developer.</p>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+
+    <header class="headerr">
+        <nav class="nav-section">
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </section>
-        <section class="progress-box">
-            <div class="html-box">
+        </nav>
+    </header>
+
+    <!--About-->
+
+    <section class="info-box" id="About">
+        <div class="pic">
+            <img src="/doobi.png" alt="Dobbi">
+        </div>
+        <div class="info">
+            <h1>Hey! I am DoBBi</h1>
+            <p class="top-p">| एक जादूगर |</p>
+        </div>
+    </section>
+
+    <!--Skills-->
+
+    <section class="section" id="Skills">
+        <div class="h">
+            <h1>Skills</h1>
+            <p class="top-p">| कौशल तो है लेकिन कम |</p>
+        </div>
+        <div class="skills-box">
+            <div class="element">
+                <i class="uil uil-html5"></i>
                 <h2>HTML</h2>
                 <div class="loader">
-                    <div class="fill">
-                        <p>80%</p>
-                    </div>
+                    <div class="fill" id="fill1">80%</div>
                 </div>
             </div>
-            <div class="css-box">
+            <div class="element">
+                <i class="uil uil-css3-simple"></i></i>
                 <h2>CSS</h2>
                 <div class="loader">
-                    <div class="fill">
-                        <p>80%</p>
+                    <div class="fill" id="fill2">85%</div>
+                </div>
+            </div>
+            <div class="element">
+                <i class="uil uil-java-script"></i></i>
+                <h2>JavaScript</h2>
+                <div class="loader" >
+                    <div class="fill" id="fill3">28%</div>
+                </div>
+            </div>
+            <div class="element">
+                <i class="uil uil-arrow"></i></i>
+                <h2>C/C++</h2>
+                <div class="loader">
+                    <div class="fill" id="fill4">73%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!--Services-->
+        <section class="section" id="Services">
+            <div class="h">
+                <h1>Services</h1>
+                <p class="top-p">|एक हाथ दे एक हाथ ले|</p>
+            </div>
+            <div class="service-box">
+                <div class="sv">
+                    <div class="icon">
+                        <i class="uil uil-brackets-curly"></i>
+                    </div>
+                    <div class="h">
+                        <h1>Web Development</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta autem distinctio, laudantium
+                            enim atque veniam dolorum eaque odio illo molestiae repellat vel consequatur dignissimos rem
+                            veritatis debitis explicabo. Maiores. </p>
+                    </div>
+                </div>
+                <div class="sv">
+                    <div class="icon">
+                        <i class="uil uil-apps"></i></i>
+                    </div>
+                    <div class="h">
+                        <h1>App Development</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta autem distinctio, laudantium
+                            enim atque veniam dolorum eaque odio illo molestiae repellat vel consequatur dignissimos rem
+                            veritatis debitis explicabo. Maiores.</p>
+                    </div>
+                </div>
+                <div class="sv">
+                    <div class="icon">
+                        <i class="uil uil-apps"></i></i>
+                    </div>
+                    <div class="h">
+                        <h1>Content Writing</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta autem distinctio, laudantium
+                            enim atque veniam dolorum eaque odio illo molestiae repellat vel consequatur dignissimos rem
+                            veritatis debitis explicabo. Maiores.</p>
+                    </div>
+                </div>
+                <div class="sv">
+                    <div class="icon">
+                        <i class="uil uil-palette"></i></i></i>
+                    </div>
+                    <div class="h">
+                        <h1>UI/UX Design</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta autem distinctio, laudantium
+                            enim atque veniam dolorum eaque odio illo molestiae repellat vel consequatur dignissimos rem
+                            veritatis debitis explicabo. Maiores.</p>
                     </div>
                 </div>
             </div>
-        </section>    
-        <section class="contact-box">
-            <div class="contact-links">
-                <ul>
-                    <li><a href="#" ><i class="uil uil-twitter"></i>Twitter</a></li>
-                    <li><a href="#" ><i class="uil uil-facebook"></i>Facebook</a></li>
-                    <li><a href="#" ><i class="uil uil-envelope"></i>Mail</a></li>
-                </ul>    
-            </div>
         </section>
-        
-        <script src="" async defer></script>
-    </body>
+
+    <!--Projects-->
+    <section class="section" id="Projects">
+        <div class="h">
+            <h1>Projects</h1>
+            <p class="top-p">| एक दो तीन... चार पांच छ: |</p>
+        </div>
+        <div class="p">
+            <div class="p-box" id="project-1">
+                <div class="img"><img src="/a8550d90d6c79b22800a346c3a4d01af.jpg" alt=""></div>
+                <div class="title">
+                    <h2>Portfolio</h2>
+                </div>
+            </div>
+            <div class="p-box" id="project-2">
+                <div class="img"><img src="/to-do-list-apps.png" alt=""></div>
+                <div class="title">
+                    <h2>To-do-list</h2>
+                </div>
+            </div>
+            <div class="p-box" id="project-3">
+                <div class="img"><img src="/a8550d90d6c79b22800a346c3a4d01af.jpg" alt=""></div>
+                <div class="title">
+                    <h2>Project-3</h2>
+                </div>
+            </div>
+            <div class="p-box" id="project-4">
+                <div class="img"><img src="/to-do-list-apps.png" alt=""></div>
+                <div class="title">
+                    <h2>Project-4</h2>
+                </div>
+            </div>
+            <div class="p-box" id="project-5">
+                <div class="img"><img src="/a8550d90d6c79b22800a346c3a4d01af.jpg" alt=""></div>
+                <div class="title">
+                    <h2>Project-5</h2>
+                </div>
+            </div>
+            <div class="p-box" id="project-6">
+                <div class="img"><img src="/to-do-list-apps.png" alt=""></div>
+                <div class="title">
+                    <h2>Project-6</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+
+    <section class="section" id="contact">
+        <div class="h">
+            <h1>Contact Us</h1>
+            <p class="top-p">| ये लो जी हम हाजीर है |</p>
+        </div>
+        <div class="contact-form" id="contact-form">
+            <form>
+                <div class="form">
+                    <input type="text" placeholder="Full Name :">
+                </div>
+                <div class="form">
+                    <input type="email" placeholder="Email :">
+                </div>
+                <div class="form">
+                    <textarea cols="30" rows="10" placeholder="Message :"></textarea>
+                </div>
+                <div class="send-button">
+                    <button>Send</button>
+                </div>
+            </form>
+            <div class="contact-links" id="contact-links">
+                <ul>
+                    <li><a href="https://github.com/rjangid9080" target="blank"><i class="uil uil-github"></i></i>Github</a></li>
+                    <li><a href="https://www.twitter.com/_rjangid_/" target="blank"><i class="uil uil-twitter"></i>Twitter</a></li>
+                    <li><a href="https://www.facebook.com/rohit.jangid.5076" target="blank"><i class="uil uil-facebook"></i>Facebook</a></li>
+                    <li><a href="https://mail.google.com" target="blank"><i class="uil uil-envelope"></i>Mail</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="" async defer></script>
+</body>
+
 </html>
