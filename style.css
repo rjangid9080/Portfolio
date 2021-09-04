@@ -6,6 +6,7 @@ body{
     width: 100vw;;
     background-color: black;
     color: white;
+    font-family: 'Merriweather', serif;
     overflow-x: hidden;
 }
 .headerr{
@@ -76,7 +77,6 @@ body{
     font-size: 50px;
 }
 .info p{
-    font-family: 'Merriweather', serif;
     font-size: 30px;
 }
 .pic {
@@ -92,10 +92,12 @@ body{
     justify-self: end;
 }
 .section {
-    display: grid;
+    display: flex;
     width: 100vw;
-    height:100vh;
-    grid-template-rows: 10% 90%;
+    /*height:100vh;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10px 15px;
 }
 .section .h{
@@ -105,14 +107,12 @@ body{
 .section .h h1{
     display: flex;
     justify-content: center;
-    font-family: 'Merriweather', serif;
 }
 
 .top-p{
     display: flex;
     justify-content: center;
     font-size:18px;
-    font-family: 'Merriweather', serif; 
     text-shadow: -2px 2px 3px rgba(0, 247, 255, 0.993);
 }
 
@@ -144,8 +144,8 @@ body{
     align-self: center;
     font-size:20px;
     text-shadow: -2px 2px 8px rgba(0, 247, 255, 0.993);
-    font-family: 'Merriweather', serif;
 }
+
 .skills-box .element .loader{
     justify-self: center;
     align-self: center;
@@ -157,7 +157,6 @@ body{
 .skills-box .element .loader .fill{
     height: 20px;
     border-radius: 5px;
-    font-family: 'Merriweather', serif;
     display: flex;
     padding-right: 3px;
     justify-content: flex-end;
@@ -178,15 +177,15 @@ body{
 /*--- Services-Box ---*/
 
 .service-box {
-    width:100%;
-    height:80%;
+    width:85%;
+    /*height:80%;*/
     display:grid;
     justify-self:center;
     align-self: center;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
     gap:50px 175px;
-    padding: 10px 15px;
+    padding: 60px 15px;
 }
 
 .sv{
@@ -214,23 +213,24 @@ body{
     justify-content: center;
     text-shadow: -2px 2px 8px rgba(0, 247, 255, 0.993);
 }
-.sv .h {
+.sv .H {
     width:100%;
-    height: 160px;
+    height: 110px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.sv .h h1{
+.sv .H h1{
     display:flex;
     justify-content: flex-end;
     padding: 20px 10px;
     text-shadow: -2px 2px 8px rgba(0, 247, 255, 0.993);
 }
-.sv .h p{
+.sv .H p{
     display:flex;
     justify-content: center;
-    padding: 0 10px;
+    font-size: 13px;
+    padding: 10px 10px;
 }
 .sv:hover{
     transform: translateX(5px) translateY(-5px);
@@ -251,7 +251,7 @@ form{
     margin:5px;   
     display: flex;
     justify-content: center;
-    padding: 2px 0px;
+    padding: 4px 0px;
 }
 .form input{
     width:250px;
@@ -278,14 +278,14 @@ form{
 .send-button{
     display: flex;
     justify-content: center;
-    padding: 2px 0;
+    padding: 10px 0;
 }
 .send-button button{
     width:80px;
     height:30px;
     color: white;
-    border-radius: 10px;
     font-family: 'Merriweather', serif;
+    border-radius: 10px;
     box-shadow: -2px 2px 5px rgba(255, 255, 255, 0.5);
     background-image: linear-gradient( 135deg, #3B2667 10%, #BC78EC 100%);
 }
@@ -330,19 +330,16 @@ input:focus, textarea:focus{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    padding: 10px 15px;
+    padding: 30px 15px;
 }
 .p .p-box{
-    display: inline-block;
+    display: flex;
     height:240px;
     width:200px;
     flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
-    border: 1px solid white;
-    box-shadow: -2px 2px 5px rgba(255, 255, 255, 0.5);
     transition: 0.5s;
-    align-self: center;
+    align-items: center;
     justify-self: center;
     
 }
@@ -352,26 +349,35 @@ input:focus, textarea:focus{
 img{
     display: flex;
     justify-content: center;
+    border-radius: 10px;
     align-items: center;
-    border-radius: 10px 10px 0 0;
     width:100%;
     height:100%;
 }
 .p .p-box .img{
     width:100%;
     height: 80%;
+    border-radius:10px 10px 0 0;
+    border: 1px solid white;
+    box-shadow: -2px 2px 5px rgba(255, 255, 255, 0.5);
 }
 .p .p-box .title{
     display: flex;
-    border-radius : 0 0 10px 10px ;
+    border-radius : 10px;
     width: 100%;
     height:20%;
     justify-content: center;
     align-items: center;
+    font-size: 11px;
+    border: 1px solid white;
+    box-shadow: -2px 2px 5px rgba(255, 255, 255, 0.5);
     background-color: #8BC6EC;
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
     border-radius: 0px 0px 10px 10px;
-}/*
+}
+
+
+/*
 #project-1{
     position: relative;
     top:200px;
@@ -425,7 +431,17 @@ img{
 
 
 
+@media (max-width:800px){
+    .skills-box .element {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2.5fr 0.2fr 2.5fr;
+    }
+    .service-box{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
 
+}
 
 
 
@@ -438,15 +454,6 @@ img{
     }
     .info p{
         font-size:20px;
-    }
-    .skills-box{
-        width: 75vw;
-        height: 65vh;
-
-    }
-    .skills-box .element {
-        grid-template-columns: 1fr;
-        grid-template-rows: 2.5fr 0.2fr 2.5fr;
     }
     .skills-box .element i{
         font-size:30px;
@@ -463,19 +470,183 @@ img{
         gap: 50px 0;
 
     }
-    #Services {
-        height:200vh;
-    }
     .sv .icon {
         top: -15px;
     }
-    #Projects{
-        height:135vh;
-    }
     .p{
         width: 96vw;
-        height: 120vh;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,1fr);
     }
+    .contact-links ul li a {
+        padding: 0px 21px;
+        font-size: 0;
+    }
+    .contact-links ul li a i {
+        padding: 5px;
+        font-size: 3.2rem;
+    }
+}
+@media (max-width:414px){
+    .nav-bar ul li{
+        padding: 15px 10px;
+    }
+    .sv {
+        height: 169px;
+        width: 300px;
+    }
+    .sv .icon {
+        height: 40px;
+        width: 40px;
+    }
+    .sv .icon i {
+        font-size: 40px;
+    }
+    .sv .H{
+        overflow:hidden;
+        height:67%;
+    }
+    .sv .H h1{
+        font-size: 17px;
+        padding: 5px 10px;
+    }
+    .sv .H p{
+        font-size: 9px;
+    }
+    .p {
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .p .p-box{
+        height: 175px;
+        width: 150px;
+    }
+    .p .p-box .img {
+        width: 90%;
+        height: 70%;
+    }
+    .p .p-box .title {
+        width: 90%;
+        height: 15%;
+    }
+    .p .p-box .title h2{
+        font-size:12px;
+    }
+    .contact-links ul li a i {
+        padding: 5px;
+        font-size: 2.2rem;
+    }
+}
+@media (max-width:320px){
+    .nav-bar ul {
+        margin-left: 30px;
+    }
+    .info-box{
+        margin-left: 14px;
+    }
+    .nav-bar ul li{
+        padding: 15px 7px;
+        font-size: 10px;
+    }
+    .pic{
+        height: 120px;
+        width: 120px;
+    }
+    .section .h h1{
+        font-size:18px;
+    }
+    .section .h p{
+        font-size:13px;
+    }
+    .pic img {
+        height: 120px;
+        width: 120px;
+    }
+    .info h1 {
+        font-size: 18px;
+    }
+    .info p {
+        font-size: 12px;
+    }
+    .top-p{
+        font-size:15px;
+    }
+    .skills-box {
+        width:53vh;
+    }
+    
+    .skills-box .element .loader{
+        height:16px;
+    }
+    .skills-box .element .loader .fill {
+        font-size: 12px;
+        align-items: center;
+        height: 16px;
+    }
+    .service-box{
+        gap:40px 0;
+    }
+    .sv {
+        height: 100%;
+        width: 200px;
+    }
+    .sv .icon {
+        height: 30px;
+        width: 30px;
+    }
+    .sv .icon i {
+        font-size: 30px;
+    }
+    .sv .H{
+        overflow:hidden;
+        height:67%;
+    }
+    .sv .H h1{
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+    .sv .H p{
+        font-size: 7px;
+    }
+    
+    .p {
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .p .p-box{
+        height: 150px;
+        width: 130px;
+    }
+    .p .p-box .img {
+        width: 90%;
+        height: 70%;
+    }
+    .p .p-box .title {
+        width: 90%;
+        height: 15%;
+    }
+    .p .p-box .title h2{
+        font-size:12px;
+    }
+    .form input {
+        width: 170px;
+        height: 10px;
+    }
+    .form textarea {
+        width: 170px;
+        height: 100px;
+    }
+
+    .contact-links ul li a {
+        padding: 0px 10px;
+        font-size: 0;
+    }
+    .contact-links ul li a i {
+        font-size: 24px;
+    }
+}
