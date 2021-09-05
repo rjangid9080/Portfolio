@@ -58,6 +58,7 @@ body{
 .nav-bar ul li:hover::after{
     width:100%;
 }
+
 .info-box{
     display:grid;
     justify-content: center;
@@ -138,6 +139,24 @@ body{
     align-self: center;
     font-size:50px;
     text-shadow: -2px 2px 8px rgba(0, 247, 255, 0.993);
+    animation: oscillate 2s infinite;
+}
+@keyframes oscillate{
+    0% {
+        transform:rotate(20deg);
+    }
+    25%{
+        transform:rotate(0deg)
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
 }
 .skills-box .element h2{
     justify-self: center;
@@ -161,7 +180,9 @@ body{
     padding-right: 3px;
     justify-content: flex-end;
     background-color: #3B2667;
+    
 }
+
 #fill1 {
     width:80%;
 }
@@ -211,6 +232,7 @@ body{
     font-size:50px;
     display: flex;
     justify-content: center;
+    animation: oscillate 2s infinite;
     text-shadow: -2px 2px 8px rgba(0, 247, 255, 0.993);
 }
 .sv .H {
@@ -258,7 +280,7 @@ form{
     height:25px;
     outline: none;
     border-radius:10px;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.8);
     font-size:12px;
     font-family: 'Merriweather', serif;
     padding: 5px 10px;
@@ -269,7 +291,7 @@ form{
     height:150px;
     outline: none;
     border-radius:10px;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.8);
     font-size: 12px;
     font-family: 'Merriweather', serif;
     padding: 5px 10px;
@@ -290,7 +312,7 @@ form{
     background-image: linear-gradient( 135deg, #3B2667 10%, #BC78EC 100%);
 }
 input:focus, textarea:focus{
-    border:2px solid #3B2667;
+    border:2px solid #503094;
 }
 
 .contact-links{
@@ -313,6 +335,7 @@ input:focus, textarea:focus{
     color: white;
     padding:30px 25px;
     font-size: 18px;
+    transition: 1s;
 }
 .contact-links ul li a i{
     padding:0 7px;
@@ -320,6 +343,9 @@ input:focus, textarea:focus{
 }
 .contact-links ul li:hover{
     transform: scale(1.15);
+}
+.contact-links ul li a:hover{
+    transform: rotate(-8deg);
 }
 
 /*<--- Project-Box ---->*/
