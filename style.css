@@ -402,6 +402,7 @@ img{
     border-radius:10px 10px 0 0;
     border: 1px solid white;
     box-shadow: -2px 2px 5px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
 }
 .title{
     display: flex;
