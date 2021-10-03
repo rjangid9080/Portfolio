@@ -363,7 +363,7 @@ input:focus, textarea:focus{
 /*<--- Project-Box ---->*/
 
 .p{
-    width:90vw;
+    width:100vw;
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -516,7 +516,6 @@ img{
         top: -15px;
     }
     .p{
-        width: 96vw;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,1fr);
@@ -557,7 +556,6 @@ img{
         font-size: 9px;
     }
     .p {
-        width: 90vw;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,1fr);
@@ -654,7 +652,6 @@ img{
     }
     
     .p {
-        width: 90vw;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,1fr);
